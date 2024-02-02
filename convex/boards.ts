@@ -1,6 +1,7 @@
 import { v } from 'convex/values'
 
 import { query } from './_generated/server'
+import { favorites } from './board'
 
 export const get = query({
     args: {
@@ -16,7 +17,24 @@ export const get = query({
             .withIndex("by_org", (q) => q.eq("orgId", args.orgId))
             .order('desc')
             .collect()
-        return boards
+
+        const boardsWithFavoriteRelation = boards.map((board) => {
+            return ctx.db
+                .query('userFavorites')
+                .withIndex("by_user_board", (q) => q
+                    .eq("userId", identity.subject)
+                    .eq("boardId", board._id))
+                .unique()
+                .then((favorites) => {
+                    return {
+                        ...board,
+                        isFavorite: !!favorites,
+                    }
+
+                })
+        })
+        const boardsWithFavoriteBoolean = Promise.all(boardsWithFavoriteRelation)
+        return boardsWithFavoriteBoolean
     }
 
 })
