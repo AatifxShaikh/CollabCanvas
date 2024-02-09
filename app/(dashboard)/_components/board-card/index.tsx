@@ -8,7 +8,7 @@ import { Footer } from "./footer"
 import { Skeleton } from "@/components/ui/skeleton"
 import { Action } from "@/components/actions"
 import { MoreHorizontal } from "lucide-react"
-import { useApiMutation } from "@/convex/hooks/useApiMutation"
+import { useApiMutation } from "@/hooks/useApiMutation"
 import { api } from "@/convex/_generated/api"
 import { toast } from "sonner"
 

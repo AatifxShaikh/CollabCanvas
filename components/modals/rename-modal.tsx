@@ -6,7 +6,7 @@ import { FormEventHandler, useEffect, useState } from "react"
 import { Input } from "../ui/input"
 import { DialogClose } from "@radix-ui/react-dialog"
 import { Button } from "../ui/button"
-import { useApiMutation } from "@/convex/hooks/useApiMutation"
+import { useApiMutation } from "@/hooks/useApiMutation"
 import { api } from "@/convex/_generated/api"
 import { toast } from "sonner"
 
