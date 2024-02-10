@@ -1,4 +1,3 @@
-Certainly! Here's a modified version of the README template for the Canvas App based on the structure of the Fullstack Trello Clone:
 
 # Collaborative Canvas App
 
