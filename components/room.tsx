@@ -12,7 +12,7 @@ export const Room = ({ children, roomId, fallback }: {
     fallback: NonNullable<ReactNode> | null
 }) => {
     return (
-        <RoomProvider id={roomId} initialPresence={{ cursor: null, selection: [] }}
+        <RoomProvider id={roomId} initialPresence={{ cursor: null, selection: [], pencilDraft: null, penColor: null }}
             initialStorage={{
                 layers: new LiveMap<string, LiveObject<Layer>>(),
                 layerIds: new LiveList(),
