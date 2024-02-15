@@ -66,4 +66,4 @@ Explore the collaborative whiteboard experience and unleash your creativity!
 
 Feel free to contribute to our project! For issues or feature requests, please create an [issue](#) or submit a [pull request](#).
 
-We hope you enjoy using our Collaborative Canvas App as much as we enjoyed creating it! 🎨✨
+
