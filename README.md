@@ -1,4 +1,4 @@
-# Collaborative Canvas App.
+# Collaborative Canvas App.,
 
 Welcome to the Collaborative Canvas App! This project is a real-time, feature-packed whiteboard application designed for collaborative creativity. Utilizing the latest technologies, including Next.js 14, Clerk, Convex, and LiveBlocks, our canvas app provides a dynamic and interactive space for visual collaboration.
 
